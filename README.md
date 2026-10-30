@@ -2,7 +2,7 @@
 
 Web applications I built during my Web Application Technologies course, using HTML, PHP, MySQL and a little JavaScript.
 
-I'm heading into marketing and business rather than development, but knowing how a web app and its data actually fit together is a real advantage — so here's the proof I can hold my own on the technical side.
+I'm heading into marketing and business rather than development, but knowing how a web app and its data actually fit together is a real advantage, so here's the proof I can hold my own on the technical side.
 
 *The interface text and code comments are in Greek; the explanations below are in English.*
 
@@ -19,7 +19,7 @@ The most complete one: a small multi-page app over a MySQL "books" database (Aut
 Built with PHP, MySQL (mysqli), HTML and client-side JavaScript validation.
 📂 Code in [`semester-project/src/`](semester-project/src) · full report in `semester-project/report.pdf`
 
-> A note I'd rather be honest about: most queries use prepared statements, but one `UPDATE` in `login.php` still drops the username straight into the SQL. In a real app I'd parameterize that too and not connect as a privileged database user. I'm leaving it visible on purpose — I know the difference, and that matters more than hiding it.
+> A note I'd rather be honest about: most queries use prepared statements, but one `UPDATE` in `login.php` still drops the username straight into the SQL. In a real app I'd parameterize that too and not connect as a privileged database user. I'm leaving it visible on purpose, I know the difference, and that matters more than hiding it.
 
 ---
 
@@ -34,7 +34,7 @@ Built with PHP sessions, HTML and JavaScript.
 
 ---
 
-### html-form — HTML5 form
+### html-form: HTML5 form
 
 A hand-built "Photo Details" form that uses a good spread of HTML5 inputs: text, textarea, select, datalist, radios, checkboxes, number, colour, date and time, all tidied up with `fieldset` and `legend`.
 
