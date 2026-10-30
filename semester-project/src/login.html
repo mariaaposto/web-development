@@ -1,0 +1,45 @@
+<!-- Maria Apostolopoulou 1117202100016 -->
+<!-- login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script>
+    // έλεγχος για να μην αφήσει ο χρήστης κενά πεδία
+    function validateForm() {
+        const user = document.forms["loginForm"]["username"].value;
+        const pass = document.forms["loginForm"]["password"].value;
+        if (user === "" || pass === "") {
+            alert("συμπλήρωσε όλα τα πεδία!");
+            return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+<body>
+    <h2>Login</h2>
+
+    <!-- φόρμα για εισαγωγή username, password και επιλογή βάσης -->
+    <form name="loginForm" action="login.php" method="POST" onsubmit="return validateForm()">
+
+        <!-- πεδίο για το όνομα χρήστη -->
+        <label>Username:</label><br>
+        <input type="text" name="username"><br><br>
+
+        <!-- πεδίο για τον κωδικό -->
+        <label>Password:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <!-- επιλογή βάσης δεδομένων -->
+        <label>Database:</label><br>
+        <select name="database">
+            <option value="web_development">web_development</option>
+        </select><br><br>
+
+        <!-- κουμπί για σύνδεση -->
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
